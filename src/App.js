@@ -8,20 +8,20 @@ import Properties from "./pages/Properties";
 
 function App() {
   return (
-    <BrowserRouter>
-      <>
-        {/* <Homepage /> */}
-        {/* <Carousel /> */}
-        <Router>
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="about" element={<About />} />
-            <Route path="props" element={<Properties />} />
-          </Routes>
-        </Router>
-      </>
-    </BrowserRouter>
+    // <BrowserRouter>
+    <>
+      <Homepage />
+      {/* <Carousel /> */}
+      {/* <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="about" element={<About />} />
+          <Route path="props" element={<Properties />} />
+        </Routes>
+      </Router> */}
+    </>
+    // </BrowserRouter>
   );
 }
 
