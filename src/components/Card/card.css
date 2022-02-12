@@ -1,0 +1,27 @@
+/* .card-container {
+  background-color: white;
+  color: #6c77a0;
+  width: 320px;
+  height: 400px;
+
+  border-radius: 10px;
+  margin: 20px;
+  border: 1px #6c77a0 solid;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+.textcont {
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  align-items: flex-start;
+  margin-left: 10px;
+} */
