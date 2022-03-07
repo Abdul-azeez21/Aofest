@@ -27,7 +27,7 @@ const Navbar = () => {
               />
             </svg> */}
             <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">
-              Aofest
+              <a href="/">Aofest</a>
             </span>
           </a>
           <button
