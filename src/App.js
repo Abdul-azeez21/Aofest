@@ -10,16 +10,14 @@ function App() {
   return (
     // <BrowserRouter>
     <>
-      <Homepage />
       {/* <Carousel /> */}
-      {/* <Router>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="about" element={<About />} />
-          <Route path="props" element={<Properties />} />
-        </Routes>
-      </Router> */}
+
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="about" element={<About />} />
+        <Route path="props" element={<Properties />} />
+      </Routes>
     </>
     // </BrowserRouter>
   );
