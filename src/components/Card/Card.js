@@ -1,8 +1,12 @@
 import React from "react";
 import "../Card/card.css";
 const Card = () => {
+  function clickme() {
+    console.log("my name is barry allen");
+  }
   const cardfInfo = [
     {
+      id: 1,
       image: "",
       title: "calis",
       semititle: "Aofest",
@@ -12,6 +16,7 @@ const Card = () => {
       text3: "powss",
     },
     {
+      id: 2,
       image: "",
       title: "calis",
       semititle: "Aofest",
@@ -21,6 +26,7 @@ const Card = () => {
       text3: "powss",
     },
   ];
+
   const rederCard = (card, index) => {
     return (
       // <div className="flex">
