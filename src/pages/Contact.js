@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../layout/Footer/Footer";
 
 const Contact = () => {
   return (
@@ -15,7 +16,7 @@ const Contact = () => {
         <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50">
           <div class="text-center">
             <h1 class="text-2xl font-semibold text-white uppercase lg:text-3xl">
-              The Simplest Way to Find Property{" "}
+              Contact Us{" "}
             </h1>
           </div>
         </div>
@@ -104,6 +105,8 @@ const Contact = () => {
           </form>
         </div>
       </section>
+      <br />
+      <Footer />
     </div>
   );
 };
