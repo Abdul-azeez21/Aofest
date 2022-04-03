@@ -1,186 +1,88 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Card/card.css";
+import cardfInfo from "./CardData";
 const Card = () => {
-  function clickme() {
-    console.log("my name is barry allen");
-  }
-  const cardfInfo = [
-    {
-      id: 1,
-      image: "",
-      title: "calis",
-      semititle: "Aofest",
-      about: "lorm",
-      text1: "lorem",
-      text2: "powoe",
-      text3: "powss",
-    },
-    {
-      id: 2,
-      image: "",
-      title: "calis",
-      semititle: "Aofest",
-      about: "lorm",
-      text1: "lorem",
-      text2: "powoe",
-      text3: "powss",
-    },
-  ];
+  return (
+    // <div className="flex">
+    //   <div className="cards" key={index}>
+    //     <div className="card-container">
+    //       <div className="imagecont">
+    //         <img
+    //           src={card.image}
+    //           alt=""
+    //           style={{ height: "250px", width: "320px" }}
+    //         />
+    //       </div>
+    //       <div className="textcont">
+    //         <div className="Headercont">{card.title}</div>
+    //         <div className="bodycont">{card.about} Hostel</div>
+    //         <div className="pricecont">{card.semititle}</div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
 
-  const rederCard = (card, index) => {
-    return (
-      // <div className="flex">
-      //   <div className="cards" key={index}>
-      //     <div className="card-container">
-      //       <div className="imagecont">
-      //         <img
-      //           src={card.image}
-      //           alt=""
-      //           style={{ height: "250px", width: "320px" }}
-      //         />
-      //       </div>
-      //       <div className="textcont">
-      //         <div className="Headercont">{card.title}</div>
-      //         <div className="bodycont">{card.about} Hostel</div>
-      //         <div className="pricecont">{card.semititle}</div>
-      //       </div>
-      //     </div>
-      //   </div>
-      // </div>
+    <>
+      {/* <div class="flex flex-row items-center justify-spacebetween max-w-sm mx-auto">
+        {cardfInfo.map((properties) => (
+          <>
+            <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md">
+              <img src={properties.image} alt="" />
+            </div>
+            <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+              <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                {properties.title}
+              </h3>
 
-      <div class="container my-12 mx-auto px-4 md:px-12" key={index}>
-        <div class="flex flex-wrap -mx-1 lg:-mx-4">
-          <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-            <article class="overflow-hidden rounded-lg shadow-lg">
-              <a href="#">
-                <img
-                  alt="Placeholder"
-                  class="block h-auto w-full  hover:scale-110 transition duration-300 ease-in-out"
-                  src="https://picsum.photos/600/400/?random"
-                />
-              </a>
-
-              <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                <h1 class="text-lg">
-                  <a class="no-underline hover:underline text-black" href="#">
-                    {card.title}
-                  </a>
-                </h1>
-                <p class="text-grey-darker text-sm">11/1/19</p>
-              </header>
-
-              <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                <a
-                  class="flex items-center no-underline hover:underline text-black"
-                  href="#"
-                >
+              <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                <span class="font-bold text-gray-800 dark:text-gray-200">
+                  $129
+                </span>
+                <button class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-200 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </>
+        ))}
+      </div> */}
+      <div class="bg-white">
+        <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+          <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+            {cardfInfo.map((properties) => (
+              <div class="group relative" key={properties.id}>
+                <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
                   <img
-                    alt="Placeholder"
-                    class="block rounded-full "
-                    src="https://picsum.photos/32/32/?random"
+                    src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                    alt="Front of men&#039;s Basic Tee in black."
+                    class="w-full h-full object-center object-cover lg:w-full lg:h-full"
                   />
-                  <p class="ml-2 text-sm">Author Name</p>
-                </a>
-                <a
-                  class="no-underline text-grey-darker hover:text-red-dark"
-                  href="#"
-                >
-                  <span class="hidden">Like</span>
-                  <i class="fa fa-heart"></i>
-                </a>
-              </footer>
-            </article>
-          </div>
-
-          <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-            <article class="overflow-hidden rounded-lg shadow-lg">
-              <a href="#">
-                <img
-                  alt="Placeholder"
-                  class="block h-auto w-full hover:scale-110 transition duration-300 "
-                  src="https://picsum.photos/600/400/?random"
-                />
-              </a>
-
-              <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                <h1 class="text-lg">
-                  <a class="no-underline hover:underline text-black" href="#">
-                    {card.title}
-                  </a>
-                </h1>
-                <p class="text-grey-darker text-sm">11/1/19</p>
-              </header>
-
-              <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                <a
-                  class="flex items-center no-underline hover:underline text-black"
-                  href="#"
-                >
-                  <img
-                    alt="Placeholder"
-                    class="block rounded-full"
-                    src="https://picsum.photos/32/32/?random"
-                  />
-                  <p class="ml-2 text-sm">Author Name</p>
-                </a>
-                <a
-                  class="no-underline text-grey-darker hover:text-red-dark"
-                  href="#"
-                >
-                  <span class="hidden">Like</span>
-                  <i class="fa fa-heart"></i>
-                </a>
-              </footer>
-            </article>
-          </div>
-
-          <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-            <article class="overflow-hidden rounded-lg shadow-lg">
-              <a href="#">
-                <img
-                  alt="Placeholder"
-                  class="block h-auto w-full hover:scale-110 transition duration-300"
-                  src="https://picsum.photos/600/400/?random "
-                />
-              </a>
-
-              <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                <h1 class="text-lg">
-                  <a class="no-underline hover:underline text-black" href="#">
-                    {card.title}
-                  </a>
-                </h1>
-                <p class="text-grey-darker text-sm">11/1/19</p>
-              </header>
-
-              <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                <a
-                  class="flex items-center no-underline hover:underline text-black"
-                  href="#"
-                >
-                  <img
-                    alt="Placeholder"
-                    class="block rounded-full"
-                    src="https://picsum.photos/32/32/?random"
-                  />
-                  <p class="ml-2 text-sm">Author Name</p>
-                </a>
-                <a
-                  class="no-underline text-grey-darker hover:text-red-dark"
-                  href="#"
-                >
-                  <span class="hidden">Like</span>
-                  <i class="fa fa-heart"></i>
-                </a>
-              </footer>
-            </article>
+                </div>
+                <div class="mt-4 flex justify-between">
+                  <div>
+                    <h3 class="text-sm text-gray-700">
+                      <Link to={`/each?id=${properties.id}`}>
+                        <span
+                          aria-hidden="true"
+                          class="absolute inset-0"
+                        ></span>
+                        {properties.title}
+                      </Link>
+                    </h3>
+                    <p class="mt-1 text-sm text-gray-500">
+                      {properties.semititle}
+                    </p>
+                  </div>
+                  <p class="text-sm font-medium text-gray-900">$35</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-    );
-  };
-
-  return <div>{cardfInfo.map(rederCard)}</div>;
+    </>
+  );
 };
 
 export default Card;

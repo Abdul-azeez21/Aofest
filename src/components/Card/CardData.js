@@ -1,0 +1,43 @@
+const cardfInfo = [
+  {
+    id: 1,
+    image: "",
+    title: "calis",
+    semititle: "Aofest",
+    about: "lorm",
+    text1: "lorem",
+    text2: "powoe",
+    text3: "powss",
+  },
+  {
+    id: 2,
+    image: "",
+    title: "calis",
+    semititle: "Aofest",
+    about: "lorm",
+    text1: "lorem",
+    text2: "powoe",
+    text3: "powss",
+  },
+  {
+    id: 3,
+    image: "",
+    title: "calis",
+    semititle: "Aofest",
+    about: "lorm",
+    text1: "lorem",
+    text2: "powoe",
+    text3: "powss",
+  },
+  {
+    id: 4,
+    image: "",
+    title: "calis",
+    semititle: "Aofest",
+    about: "lorm",
+    text1: "lorem",
+    text2: "powoe",
+    text3: "powss",
+  },
+];
+export default cardfInfo;

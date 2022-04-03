@@ -5,6 +5,7 @@ import Carousel from "./components/Carousel/Carousel";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Properties from "./pages/Properties";
+import SingleProp from "./components/Card/SingleProp";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="about" element={<About />} />
         <Route path="props" element={<Properties />} />
+        <Route path="each" element={<SingleProp />} />
       </Routes>
     </>
     // </BrowserRouter>
