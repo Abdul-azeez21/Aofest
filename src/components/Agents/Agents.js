@@ -267,7 +267,6 @@ const Agents = () => {
           </div>
         </div>
       </section>
-      ©
     </div>
   );
 };
