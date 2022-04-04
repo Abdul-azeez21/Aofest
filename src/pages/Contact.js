@@ -10,7 +10,7 @@ const Contact = () => {
         className="w-full bg-center bg-cover h-[32rem]"
         style={{
           backgroundImage:
-            "url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)",
+            "url(https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fHJlYWwlMjBlc3RhdGV8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)",
         }}
       >
         <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50">
@@ -25,9 +25,7 @@ const Contact = () => {
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
           <div className="py-6 md:py-0 md:px-6">
             <h1 className="text-4xl font-bold">Get in touch</h1>
-            <p className="pt-2 pb-4">
-              Fill in the form to start a conversation
-            </p>
+            <p className="pt-2 pb-4">Fill in the form to contact us</p>
             <div className="space-y-4">
               <p className="flex items-center">
                 <svg
@@ -42,7 +40,10 @@ const Contact = () => {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>Fake address, 9999 City</span>
+                <span>
+                  Shop L7 & L8, Abiola Modern Market, Ogba Road, Agege, Lagos
+                  State, Nigeria.
+                </span>
               </p>
               <p className="flex items-center">
                 <svg
@@ -53,7 +54,7 @@ const Contact = () => {
                 >
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                 </svg>
-                <span>123456789</span>
+                <span>08029559491</span>
               </p>
               <p className="flex items-center">
                 <svg

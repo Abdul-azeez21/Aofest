@@ -13,13 +13,12 @@ const Footer = () => {
                     href="#"
                     class="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
                   >
-                    Brand
+                    Aofest Property Enterprise
                   </a>
                 </div>
 
                 <p class="max-w-md mt-2 text-gray-500 dark:text-gray-400">
-                  Join 31,000+ other and never miss out on new tips, tutorials,
-                  and more.
+                  BUY & BUILD affordable residential land
                 </p>
 
                 <div class="flex mt-4 -mx-2">
@@ -59,57 +58,32 @@ const Footer = () => {
             <div class="mt-6 lg:mt-0 lg:flex-1">
               <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
                 <div>
-                  <h3 class="text-gray-700 uppercase dark:text-white">About</h3>
                   <a
-                    href="#"
-                    class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                    href="/about"
+                    class="text-gray-700 uppercase dark:text-white"
                   >
-                    Company
-                  </a>
-                  <a
-                    href="#"
-                    class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                  >
-                    community
-                  </a>
-                  <a
-                    href="#"
-                    class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                  >
-                    Careers
+                    About
                   </a>
                 </div>
 
                 <div>
-                  <h3 class="text-gray-700 uppercase dark:text-white">
-                    Products
-                  </h3>
                   <a
-                    href="#"
-                    class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                    href="/props"
+                    class="text-gray-700 uppercase dark:text-white"
                   >
-                    Mega cloud
-                  </a>
-                  <a
-                    href="#"
-                    class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                  >
-                    Aperion UI
-                  </a>
-                  <a
-                    href="#"
-                    class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                  >
-                    Meraki UI
+                    Properties
                   </a>
                 </div>
 
                 <div>
-                  <h3 class="text-gray-700 uppercase dark:text-white">
+                  <a
+                    href="/contact"
+                    class="text-gray-700 uppercase dark:text-white"
+                  >
                     Contact
-                  </h3>
+                  </a>
                   <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                    +1 526 654 8965
+                    08029559491
                   </span>
                   <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
                     example@email.com
@@ -123,7 +97,7 @@ const Footer = () => {
 
           <div>
             <p class="text-center text-gray-800 dark:text-white">
-              © Brand 2020 - All rights reserved
+              © Aofest Property Enterprise 2022 - All rights reserved
             </p>
           </div>
         </div>
