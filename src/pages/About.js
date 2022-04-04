@@ -109,7 +109,7 @@ const About = () => {
       <h1 className="haa text-4xl font-bold py-3 justify-center w-full">
         Core Values
       </h1>
-      <div class="grid grid-cols-5 pt-2 xs:grid-cols-1 sm:grid-cols-1 xl:grid-cols-5">
+      <div class="grid grid-cols-1 pt-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-5 xl:grid-cols-5">
         <div class="flex justify-center py-3">
           <div class="flex justify-center p-2 align-middle rounded-lg sm:p-4 dark:bg-violet-400">
             <svg
