@@ -2,8 +2,8 @@ const cardfInfo = [
   {
     id: 1,
     image: "",
-    title: "calis",
-    semititle: "Aofest",
+    title: "3 Bedroom Detached Duplex",
+    semititle: "Lagos State",
     about: "lorm",
     text1: "lorem",
     text2: "powoe",
@@ -12,8 +12,8 @@ const cardfInfo = [
   {
     id: 2,
     image: "",
-    title: "calis",
-    semititle: "Aofest",
+    title: "3 Bedroom Detached Duplex",
+    semititle: "Ogun State",
     about: "lorm",
     text1: "lorem",
     text2: "powoe",
@@ -22,8 +22,8 @@ const cardfInfo = [
   {
     id: 3,
     image: "",
-    title: "calis",
-    semititle: "Aofest",
+    title: "3 Bedroom Detached Duplex",
+    semititle: "Oyo State",
     about: "lorm",
     text1: "lorem",
     text2: "powoe",
@@ -32,8 +32,8 @@ const cardfInfo = [
   {
     id: 4,
     image: "",
-    title: "calis",
-    semititle: "Aofest",
+    title: "3 Bedroom Detached Duplex",
+    semititle: "Lagos State",
     about: "lorm",
     text1: "lorem",
     text2: "powoe",

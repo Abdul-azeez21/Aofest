@@ -54,7 +54,7 @@ const Card = () => {
               <div class="group relative" key={properties.id}>
                 <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
                   <img
-                    src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                    src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2V8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                     alt="Front of men&#039;s Basic Tee in black."
                     class="w-full h-full object-center object-cover lg:w-full lg:h-full"
                   />
@@ -74,7 +74,7 @@ const Card = () => {
                       {properties.semititle}
                     </p>
                   </div>
-                  <p class="text-sm font-medium text-gray-900">$35</p>
+                  <p class="text-sm font-medium text-gray-900">$35k</p>
                 </div>
               </div>
             ))}
