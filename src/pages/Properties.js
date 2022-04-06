@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Card from "../components/Card/Card";
 import Footer from "../layout/Footer/Footer";
+import PropCard from "../components/Card/PropCard";
 
 const Properties = () => {
   return (
@@ -26,7 +27,7 @@ const Properties = () => {
       <br />
       <br />
       <br />
-      <Card />
+      <PropCard />
       <br />
       <br />
       <br />
