@@ -1,8 +1,52 @@
-import React from "react";
+import { useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../layout/Footer/Footer";
-
+import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+  toast.configure();
+  const [values, setValues] = useState({
+    fullName: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setValues((values) => ({
+      ...values,
+      [e.target.name]: e.target.value,
+    }));
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .send(
+        "service_xi57x05",
+        "template_j57domt",
+        values,
+        "user_PDU99tS6mlXYloYhmsjk0"
+      )
+      .then(
+        (response) => {
+          // console.log("SUCCESS", response);
+          if (response.status === 200) {
+            navigate("/");
+            toast.success("Your email Has been submitted Successfully");
+          }
+        },
+
+        (error) => {
+          // console.log("FAILED...", error);
+        }
+      );
+
+    setLoading(true);
+  };
+
   return (
     <div>
       <Navbar />
@@ -71,6 +115,7 @@ const Contact = () => {
             </div>
           </div>
           <form
+            onSubmit={handleSubmit}
             novalidate=""
             className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
           >
@@ -78,6 +123,9 @@ const Contact = () => {
               <span className="mb-1">Full name</span>
               <input
                 type="text"
+                name="fullName"
+                value={values.fullName}
+                onChange={handleChange}
                 placeholder="Leroy Jenkins"
                 className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:bg-coolGray-800"
               />
@@ -86,6 +134,9 @@ const Contact = () => {
               <span className="mb-1">Email address</span>
               <input
                 type="email"
+                name="email"
+                onChange={handleChange}
+                value={values.email}
                 placeholder="leroy@jenkins.com"
                 className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:bg-coolGray-800"
               />
@@ -94,19 +145,33 @@ const Contact = () => {
               <span className="mb-1">Message</span>
               <textarea
                 rows="3"
+                name="message"
+                onChange={handleChange}
+                value={values.message}
                 className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:bg-coolGray-800"
               ></textarea>
             </label>
-            <button
-              type="button"
-              className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-400 dark:text-coolGray-900 focus:ring-violet-400 hover:ring-violet-400"
-            >
-              Submit
-            </button>
+            {!loading && (
+              <button
+                type="submit"
+                className="self-center text-white font-bold px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-blue-400 dark:text-coolGray-900 focus:ring-violet-400 hover:opacity-violet-400"
+              >
+                Submit
+              </button>
+            )}
+            {loading && (
+              <button
+                type="submit"
+                className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-400 dark:text-coolGray-900 focus:ring-violet-400 hover:ring-violet-400"
+              >
+                <div className="w-5 h-5 text-center border-4 border-dashed rounded-full animate-spin border-white-400"></div>
+              </button>
+            )}
           </form>
         </div>
       </section>
       <br />
+
       <Footer />
     </div>
   );
