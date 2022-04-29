@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../Card/card.css";
 import cardfInfo from "./CardData";
 const Card = () => {
-  const card = cardfInfo.slice(1, 2);
+  const card = cardfInfo.slice(0, 4);
   return (
     // <div className="flex">
     //   <div className="cards" key={index}>
@@ -56,13 +56,13 @@ const Card = () => {
                 <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
                   <img
                     src={properties.image}
-                    alt="Front of men&#039;s Basic Tee in black."
+                    alt="Aofest Property"
                     class="w-full h-full object-center object-cover lg:w-full lg:h-full"
                   />
                 </div>
                 <div class="mt-4 flex justify-between">
                   <div>
-                    <h3 class="text-sm text-gray-700">
+                    <h3 class="text-sm font-medium text-gray-700">
                       <Link to={`/each?id=${properties.id}`}>
                         <span
                           aria-hidden="true"
@@ -75,7 +75,10 @@ const Card = () => {
                       {properties.semititle}
                     </p>
                   </div>
-                  <p class="text-sm font-medium text-gray-900">$35k</p>
+                  <p class="text-sm font-medium text-gray-900">
+                    {" "}
+                    {properties.text1}
+                  </p>
                 </div>
               </div>
             ))}

@@ -1,12 +1,13 @@
+import Logo from "../images/prop1.jpg";
 const cardfInfo = [
   {
     id: 1,
     image:
       "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2V8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    title: "3 Bedroom Detached Duplex",
-    semititle: "Lagos State",
+    title: "5-Bedroom Detached Duplex with BQ",
+    semititle: "Morgan Estate",
     about: "lorm",
-    text1: "lorem",
+    text1: "",
     text2: "powoe",
     text3: "powss",
   },
@@ -14,10 +15,10 @@ const cardfInfo = [
     id: 2,
     image:
       "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2V8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    title: "3 Bedroom Detached Duplex",
-    semititle: "Ogun State",
+    title: "4-Bedroom Detached Duplex with BQ",
+    semititle: "Isheri, Magodo",
     about: "lorm",
-    text1: "lorem",
+    text1: "",
     text2: "powoe",
     text3: "powss",
   },

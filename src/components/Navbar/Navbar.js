@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { height } from "dom-helpers";
 const Navbar = () => {
   return (
     <div>
@@ -27,7 +28,13 @@ const Navbar = () => {
               />
             </svg> */}
             <span class="self-center text-lg font-bold lg:text-3xl whitespace-nowrap dark:text-white">
-              <a href="/">Aofest</a>
+              <a href="/" class="">
+                <img
+                  src={require("../images/AOFEST BLACK LOGO.png")}
+                  alt="Aofest Enterprise"
+                  style={{ height: "5opx", width: "100px" }}
+                />
+              </a>
             </span>
           </a>
           <button

@@ -56,7 +56,7 @@ const PropCard = () => {
                 <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
                   <img
                     src={properties.image}
-                    alt="Front of men&#039;s Basic Tee in black."
+                    alt="Aofest Property"
                     class="w-full h-full object-center object-cover lg:w-full lg:h-full"
                   />
                 </div>

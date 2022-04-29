@@ -19,8 +19,8 @@ const Stats = () => {
               </svg>
             </div>
             <div className="flex flex-col justify-center align-middle">
-              <p className="text-3xl font-semibold leading-none">200</p>
-              <p className="capitalize">Orders</p>
+              <p className="text-3xl font-semibold leading-none">5</p>
+              <p className="capitalize">Sales</p>
             </div>
           </div>
           <div className="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-coolGray-900 dark:text-coolGray-100">
@@ -38,7 +38,7 @@ const Stats = () => {
               </svg>
             </div>
             <div className="flex flex-col justify-center align-middle">
-              <p className="text-3xl font-semibold leading-none">7500</p>
+              <p className="text-3xl font-semibold leading-none">10</p>
               <p className="capitalize">New customers</p>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Stats = () => {
               </svg>
             </div>
             <div className="flex flex-col justify-center align-middle">
-              <p className="text-3xl font-semibold leading-none">172%</p>
+              <p className="text-3xl font-semibold leading-none">30%</p>
               <p className="capitalize">Growth</p>
             </div>
           </div>
@@ -75,7 +75,7 @@ const Stats = () => {
               </svg>
             </div>
             <div className="flex flex-col justify-center align-middle">
-              <p className="text-3xl font-semibold leading-none">17%</p>
+              <p className="text-3xl font-semibold leading-none">10%</p>
               <p className="capitalize">Bounce rate</p>
             </div>
           </div>
