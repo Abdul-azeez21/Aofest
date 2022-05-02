@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../Card/card.css";
 import cardfInfo from "./CardData";
 const Card = () => {
-  const card = cardfInfo.slice(0, 4);
+  const card = cardfInfo.slice(0, 1);
   return (
     // <div className="flex">
     //   <div className="cards" key={index}>

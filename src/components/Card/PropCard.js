@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../Card/card.css";
 import cardfInfo from "./CardData";
 const PropCard = () => {
-  const card2 = cardfInfo.slice(1, 9);
+  const card2 = cardfInfo.slice(1, 5);
   return (
     // <div className="flex">
     //   <div className="cards" key={index}>
@@ -75,7 +75,7 @@ const PropCard = () => {
                       {properties.semititle}
                     </p>
                   </div>
-                  <p class="text-sm font-medium text-gray-900">$35k</p>
+                  <p class="text-sm font-medium text-gray-900"></p>
                 </div>
               </div>
             ))}
