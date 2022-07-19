@@ -69,7 +69,6 @@
 }
 
 .str {
-  -webkit-text-stroke: 2px black;
   animation-duration: calc(
     var(--scrolling-gallery-item-duration, 7s) /
       var(--scrolling-gallery-items-visible) *

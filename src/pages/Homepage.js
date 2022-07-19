@@ -58,7 +58,7 @@ const Homepage = () => {
       </motion.div>
       <Services />
       <div>
-        <h2 className="haa text-3xl font-semibold justify-center w-full">
+        <h2 className="haa text-xl font-semibold justify-center w-full">
           Properties
         </h2>
       </div>
@@ -66,7 +66,7 @@ const Homepage = () => {
       <br />
       <section className="scroll">
         <div className="scroll-inner">
-          <h1 className="lg:text-7xl text-5xl items-center justify-center flex text-white str">
+          <h1 className="lg:text-7xl text-5xl items-center justify-center flex text-black str">
             <span className="px-2 scroller-item">BUILD</span>
             <span className="px-2 scroller-item">BUY</span>
             <span className="px-2 scroller-item">MANAGE</span>
