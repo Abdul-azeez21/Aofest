@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Services from "../components/Services/Services";
-import Card from "../components/Card/Card.js";
 import Stats from "../components/Stats/Stats";
 import Agents from "../components/Agents/Agents";
 import Footer from "../layout/Footer/Footer";
+import HomeCard from "../components/Card/HomeCard";
 import "../css/homepage.css";
 
 //motion
@@ -70,20 +70,22 @@ const Homepage = () => {
         <h2 className="haa text-xl font-semibold justify-center w-full">
           Properties
         </h2>
-        <Card />
+        <HomeCard />
         <div className="container">
           <div className="flex justify-center items-center">
-            <button className="text-center">
-              <span className="text-black lg:text-2xl p-2 pb-6 font-normal text-base">
-                CHECK OUT OUR PROPERTIES
-              </span>
-              <span className="text-center justify-center flex">
-                <FiArrowRight
-                  className="h-5 w-5 text-blue-500"
-                  strokeWidth="2"
-                />
-              </span>
-            </button>
+            <a href="/props">
+              <button className="text-center">
+                <span className="text-black lg:text-2xl p-2 pb-6 font-normal text-base">
+                  CHECK OUT OUR PROPERTIES
+                </span>
+                <span className="text-center justify-center flex">
+                  <FiArrowRight
+                    className="h-5 w-5 text-blue-500"
+                    strokeWidth="2"
+                  />
+                </span>
+              </button>
+            </a>
           </div>
         </div>
       </motion.div>
