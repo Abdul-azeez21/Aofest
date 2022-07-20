@@ -10,6 +10,9 @@ import "../css/homepage.css";
 //motion
 import { motion } from "framer-motion";
 
+//icons
+import { FiArrowRight } from "react-icons/fi";
+
 const Homepage = () => {
   return (
     <div>
@@ -56,17 +59,37 @@ const Homepage = () => {
           </span>
         </motion.div>
       </motion.div>
+      <br />
       <Services />
-      <div>
+      <motion.div
+        initial={{ opacity: 0, translateY: 70 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 1, delay: 0 }}
+        viewport={{ once: true }}
+      >
         <h2 className="haa text-xl font-semibold justify-center w-full">
           Properties
         </h2>
-      </div>
-      <Card />
-      <br />
-      <section className="scroll">
+        <Card />
+        <div className="container">
+          <div className="flex justify-center items-center">
+            <button className="text-center">
+              <span className="text-black lg:text-2xl p-2 pb-6 font-normal text-base">
+                CHECK OUT OUR PROPERTIES
+              </span>
+              <span className="text-center justify-center flex">
+                <FiArrowRight
+                  className="h-5 w-5 text-blue-500"
+                  strokeWidth="2"
+                />
+              </span>
+            </button>
+          </div>
+        </div>
+      </motion.div>
+      <section className="scroll pt-10">
         <div className="scroll-inner">
-          <h1 className="lg:text-7xl text-5xl items-center justify-center flex text-black str">
+          <h1 className="lg:text-6xl md:text-5xl text-2xl items-center justify-center flex text-black str">
             <span className="px-2 scroller-item">BUILD</span>
             <span className="px-2 scroller-item">BUY</span>
             <span className="px-2 scroller-item">MANAGE</span>
@@ -84,10 +107,13 @@ const Homepage = () => {
 
       <br />
       <br />
-      <h1 className="haa text-3xl font-semibold justify-center w-full">
-        Our Stats
-      </h1>
-      <Stats />
+      <div>
+        <h1 className="haa text-3xl font-semibold justify-center w-full">
+          Our Stats
+        </h1>
+        <Stats />
+      </div>
+
       <br />
       <br />
       <Agents />

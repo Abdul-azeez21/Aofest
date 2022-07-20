@@ -4,21 +4,27 @@ import React from "react";
 import { motion } from "framer-motion";
 
 //icons
-import { FiTruck, FiShoppingCart, FiHome, FiUser } from "react-icons/fi";
-import { HiOutlineChartBar } from "react-icons/hi";
+import { FiTruck, FiHome, FiUser, FiBriefcase } from "react-icons/fi";
+import { FaRegHandshake } from "react-icons/fa";
 
 const Services = () => {
   return (
     <div>
       <section className="bg-white dark:bg-gray-900">
         <div className="container px-6 py-10 mx-auto">
-          <h1 className="text-xl font-semibold text-gray-800 lg:text-xl dark:text-white">
+          <motion.h1
+            className="text-xl font-semibold text-gray-800 lg:text-xl dark:text-white"
+            initial={{ opacity: 0, translateY: 70 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 1, delay: 0 }}
+            viewport={{ once: true }}
+          >
             What is{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-900">
               AOFEST
             </span>{" "}
             all about?
-          </h1>
+          </motion.h1>
 
           <motion.div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-5">
             <motion.div
@@ -43,7 +49,7 @@ const Services = () => {
               viewport={{ once: true }}
             >
               <span className="inline-block text-blue-500 dark:text-blue-400">
-                <FiShoppingCart
+                <FaRegHandshake
                   className="h-6 w-6 animate-bounce"
                   strokeWidth="2"
                 />
@@ -60,7 +66,7 @@ const Services = () => {
               viewport={{ once: true }}
             >
               <span class="inline-block text-blue-500 dark:text-blue-400">
-                <HiOutlineChartBar
+                <FiBriefcase
                   className="h-6 w-6 animate-bounce"
                   strokeWidth="2"
                 />
