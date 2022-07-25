@@ -1,12 +1,20 @@
 import React from "react";
 
+//motion
+import { motion } from "framer-motion";
 //icons
 import { FiFacebook } from "react-icons/fi";
 
 const Agents = () => {
   return (
     <div>
-      <section class="bg-white dark:bg-gray-900">
+      <motion.section
+        class="bg-white dark:bg-gray-900"
+        initial={{ opacity: 0, translateY: 70 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 1, delay: 0 }}
+        viewport={{ once: true }}
+      >
         <div class="h-[32rem] bg-gray-100 dark:bg-gray-800">
           <div class="container px-6 py-10 mx-auto">
             <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
@@ -34,7 +42,7 @@ const Agents = () => {
                 alt=""
               />
 
-              <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">
+              <h1 class="mt-4 lg:text-2xl text-lg font-semibold text-gray-700 capitalize dark:text-white">
                 Akinsolu Akinjide Festus
               </h1>
 
@@ -60,7 +68,7 @@ const Agents = () => {
                 alt=""
               />
 
-              <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">
+              <h1 class="mt-4 lg:text-2xl text-lg font-semibold text-gray-700 capitalize dark:text-white">
                 Akinsolu Kolawole Akinwunmi
               </h1>
 
@@ -86,7 +94,7 @@ const Agents = () => {
                 alt=""
               />
 
-              <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">
+              <h1 class="mt-4 lg:text-2xl text-lg font-semibold text-gray-700 capitalize dark:text-white">
                 Atenugbe Samuel
               </h1>
 
@@ -106,7 +114,7 @@ const Agents = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

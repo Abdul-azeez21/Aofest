@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Services from "../components/Services/Services";
 import Stats from "../components/Stats/Stats";
@@ -18,7 +18,7 @@ const Homepage = () => {
     <div>
       <Navbar />
       <motion.div className="w-full bg-gradient-to-b from-blue-800 via-purple-400 to-white content-center justify-center items-center lg:flex h-[32rem] p-8">
-        <motion.div className="p-5">
+        <motion.div className="p-5 flex justify-center items-center">
           <motion.div
             className="border border-white p-2"
             initial={{ opacity: 0, translateX: 50 }}

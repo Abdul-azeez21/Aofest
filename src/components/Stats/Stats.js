@@ -1,5 +1,8 @@
 import React from "react";
 
+//motion
+import { motion } from "framer-motion";
+
 //icons
 import {
   FiShoppingCart,
@@ -11,7 +14,13 @@ import {
 const Stats = () => {
   return (
     <div>
-      <section className="p-6 my-6 dark:bg-coolGray-800 dark:text-coolGray-100">
+      <motion.section
+        className="p-6 my-6 dark:bg-coolGray-800 dark:text-coolGray-100"
+        initial={{ opacity: 0, translateY: 70 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 1, delay: 0 }}
+        viewport={{ once: true }}
+      >
         <div className="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4">
           <div className="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-coolGray-900 dark:text-coolGray-100">
             <div className="flex justify-center p-2 align-middle rounded-lg sm:p-4 dark:bg-violet-400">
@@ -50,7 +59,7 @@ const Stats = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };
