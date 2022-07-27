@@ -91,7 +91,7 @@ const Homepage = () => {
       </motion.div>
       <section className="scroll pt-10">
         <div className="scroll-inner">
-          <h1 className="lg:text-6xl md:text-5xl text-2xl items-center justify-center flex text-black str">
+          <h1 className="lg:text-6xl md:text-5xl text-2xl items-center justify-center flex text-blue-800 str">
             <span className="px-2 scroller-item">BUILD</span>
             <span className="px-2 scroller-item">BUY</span>
             <span className="px-2 scroller-item">MANAGE</span>

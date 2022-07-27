@@ -4,29 +4,36 @@ import Card from "../components/Card/Card";
 import Footer from "../layout/Footer/Footer";
 import PropCard from "../components/Card/PropCard";
 
+//header animation
+import Lottie from "react-lottie";
+
 const Properties = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: require("../house.json"),
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <div>
       <Navbar />
-      <div
-        className="w-full bg-center bg-cover h-[32rem]"
-        style={{
-          backgroundImage:
-            "url(https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2luZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60)",
-        }}
-      >
-        <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50">
-          <div class="text-center">
-            <h1 class="text-2xl font-semibold text-white uppercase lg:text-3xl">
-              Choose Your Desired Property{" "}
-            </h1>
+      <div className="w-full bg-white h-[28rem] flex items-center justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4">
+          <div className="flex justify-center items-center">
+            <div className="px-5">
+              <h1 className="text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-900 md:text-3xl lg:text-5xl">
+                Choose Your Desired
+              </h1>
+              <p className="lg:text-4xl text-xl font-semibold">Property</p>
+            </div>
+          </div>
+          <div className="container">
+            <Lottie options={defaultOptions} height={300} width="100%" />
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
       <div class="container">
         <h3 class="text-3xl font-semibold text-dark text-center border-b-2 py-3 border-blue-400">
           First Property
