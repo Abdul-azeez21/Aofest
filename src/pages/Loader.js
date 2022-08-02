@@ -5,12 +5,12 @@ const Loader = ({ setLoading }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 3500);
     return () => clearTimeout(timer);
   });
 
   return (
-    <div className="">
+    <div className="container">
       <div className="w-screen h-screen container flex justify-center items-center">
         <video src={logoAni} autoPlay muted loop />
       </div>
