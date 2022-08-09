@@ -16,7 +16,7 @@ const Loader = ({ setLoading }) => {
     <motion.div className="container">
       <motion.div
         className="w-screen h-screen container flex justify-center items-center"
-        initial={{ opacity: 0, translateZ: -60 }}
+        initial={{ opacity: 0, translateZ: -80 }}
         whileInView={{ opacity: 1, translateZ: 0 }}
         transition={{ duration: 1.5, delay: 0 }}
       >

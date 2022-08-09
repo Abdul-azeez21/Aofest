@@ -10,31 +10,18 @@ import SingleProp from "./components/Card/SingleProp";
 import Loader from "./pages/Loader";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    loading
-      ? document.querySelector("body").classList.add("loading")
-      : document.querySelector("body").classList.remove("loading");
-  }, [loading]);
-
   return (
-    <div>
-      {loading ? (
-        <Loader setLoading={setLoading} />
-      ) : (
-        <>
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="about" element={<About />} />
-            <Route path="props" element={<Properties />} />
-            <Route path="each" element={<SingleProp />} />
-            {/* <Route path="load" element={<Loader />} /> */}
-          </Routes>
-        </>
-      )}
-    </div>
+    // <BrowserRouter>
+    <>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="about" element={<About />} />
+        <Route path="props" element={<Properties />} />
+        <Route path="each" element={<SingleProp />} />
+      </Routes>
+    </>
+    // </BrowserRouter>
   );
 }
 
