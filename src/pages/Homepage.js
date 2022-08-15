@@ -9,6 +9,7 @@ import "../css/homepage.css";
 
 //motion
 import { motion } from "framer-motion";
+import Marquee from "react-fast-marquee";
 
 //icons
 import { FiArrowRight } from "react-icons/fi";
@@ -89,21 +90,40 @@ const Homepage = () => {
           </div>
         </div>
       </motion.div>
-      <section className="scroll pt-10">
-        <div className="scroll-inner">
-          <h1 className="lg:text-6xl md:text-5xl text-2xl items-center justify-center flex text-blue-800 str">
-            <span className="px-2 scroller-item">BUILD</span>
-            <span className="px-2 scroller-item">BUY</span>
-            <span className="px-2 scroller-item">MANAGE</span>
-            <span className="px-2 scroller-item">SELL</span>
-            <span className="px-2 scroller-item">RENOVATE</span>
-            {/* Exact copy */}
-            <span className="px-2 scroller-item">BUILD</span>
-            <span className="px-2 scroller-item">BUY</span>
-            <span className="px-2 scroller-item">MANAGE</span>
-            <span className="px-2 scroller-item">SELL</span>
-            <span className="px-2 scroller-item">RENOVATE</span>
-          </h1>
+      <section className="pt-10">
+        <div className="lg:text-5xl md:text-5xl text-2xl items-center justify-center flex text-blue-800 ">
+          <Marquee pauseOnHover speed={30}>
+            <div>
+              <span className="px-4">BUILD</span>
+            </div>
+            <div>
+              <span className="px-4">BUY</span>
+            </div>
+            <div>
+              <span className="px-4">MANAGE</span>
+            </div>
+            <div>
+              <span className="px-4">SELL</span>
+            </div>
+            <div>
+              <span className="px-4">RENOVATE</span>
+            </div>
+            <div>
+              <span className="px-4">BUILD</span>
+            </div>
+            <div>
+              <span className="px-4">BUY</span>
+            </div>
+            <div>
+              <span className="px-4">MANAGE</span>
+            </div>
+            <div>
+              <span className="px-4">SELL</span>
+            </div>
+            <div>
+              <span className="px-4">RENOVATE</span>
+            </div>
+          </Marquee>
         </div>
       </section>
 
