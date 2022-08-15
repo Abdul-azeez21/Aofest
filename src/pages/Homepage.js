@@ -55,7 +55,7 @@ const Homepage = () => {
               Renovate
             </span>
           </div>
-          <span className="lg:text-4xl text-3xl text-gray-900 p-1">
+          <span className="lg:text-4xl text-2xl text-gray-900 p-1">
             Residential properties
           </span>
         </motion.div>
