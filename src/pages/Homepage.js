@@ -92,7 +92,7 @@ const Homepage = () => {
       </motion.div>
       <section className="pt-10">
         <div className="lg:text-5xl md:text-5xl text-2xl items-center justify-center flex text-blue-800 ">
-          <Marquee pauseOnHover speed={30}>
+          <Marquee pauseOnHover speed={30} gradient={false}>
             <div>
               <span className="px-4">BUILD</span>
             </div>

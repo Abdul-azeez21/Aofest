@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./App.css";
 import Homepage from "./pages/Homepage";
-import { BrowserRouter, Routes, Route, Link, Router } from "react-router-dom";
-import Carousel from "./components/Carousel/Carousel";
+import { Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Properties from "./pages/Properties";
 import SingleProp from "./components/Card/SingleProp";
-import Loader from "./pages/Loader";
+// import Loader from "./pages/Loader";
 
 function App() {
   return (

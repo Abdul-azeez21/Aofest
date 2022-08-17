@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import logo from "../components/images/AOFEST BLACK LOGO.png";
+import logo from "../components/images/LOGO.jpeg";
 
 //motion
 import { motion } from "framer-motion";
@@ -16,9 +16,10 @@ const Loader = ({ setLoading }) => {
     <motion.div className="container">
       <motion.div
         className="w-screen h-screen container flex justify-center items-center"
-        initial={{ opacity: 0, translateZ: -80 }}
+        initial={{ opacity: 0, translateZ: 0 }}
         whileInView={{ opacity: 1, translateZ: 0 }}
         transition={{ duration: 1.5, delay: 0 }}
+        onAnimationComplete={() => setLoading(false)}
       >
         <motion.img src={logo} alt="logo" height="50%" width="50%" />
       </motion.div>
