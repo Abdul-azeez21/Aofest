@@ -13,7 +13,7 @@ const Footer = () => {
               <div class="px-6">
                 <div>
                   <a
-                    href="#"
+                    href="/"
                     class="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
                   >
                     Aofest Property Enterprise
@@ -88,7 +88,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <hr class="h-px my-6 bg-gray-300 border-none dark:bg-gray-700" />
+          <hr class="h-px my-6 bg-red-300 border-none" />
 
           <div>
             <p class="text-center text-gray-800 dark:text-white">

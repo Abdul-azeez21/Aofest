@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Services from "../components/Services/Services";
-import Stats from "../components/Stats/Stats";
 import Agents from "../components/Agents/Agents";
 import Footer from "../layout/Footer/Footer";
 import HomeCard from "../components/Card/HomeCard";
@@ -126,15 +125,6 @@ const Homepage = () => {
           </Marquee>
         </div>
       </section>
-
-      <br />
-      <br />
-      <div>
-        <h1 className="haa text-3xl font-semibold justify-center w-full">
-          Our Stats
-        </h1>
-        <Stats />
-      </div>
 
       <br />
       <br />

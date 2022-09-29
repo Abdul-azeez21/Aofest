@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
-//import Testimonial from "../components/Testimonial/Testimonial";
 import Footer from "../layout/Footer/Footer";
 
 //motion
@@ -60,7 +59,7 @@ const About = () => {
         </div>
       </div>
 
-      <section class="bg-white">
+      <section class="bg-gray-100 my-5">
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-x-2">
           <motion.div
             className="flex justify-center items-center"
@@ -141,64 +140,54 @@ const About = () => {
           </motion.div>
         </div>
       </section>
-      <br />
-      <br />
-      <br />
-      {/* <Carousel /> */}
-      <h1 className="flex items-center lg:text-3xl text-xl font-medium py-3 justify-center w-full">
-        Core Values
-      </h1>
-      <div class="grid grid-cols-1 pt-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-5 xl:grid-cols-5">
-        <div class="flex justify-center py-3">
-          <div class="flex justify-center p-2 align-middle  sm:p-4">
-            <HiOutlineLightBulb className="h-7 w-7" />
+      <div className="bg-gray-100 my-16 p-5">
+        <h1 className="flex items-center lg:text-3xl text-xl font-medium py-3 justify-center w-full">
+          Core Values
+        </h1>
+        <div class="grid grid-cols-1 pt-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-5 xl:grid-cols-5">
+          <div class="flex justify-center py-3">
+            <div class="flex justify-center p-2 align-middle  sm:p-4">
+              <HiOutlineLightBulb className="h-7 w-7" />
+            </div>
+            <div class="flex flex-col justify-center text-lg lg:text-2xl">
+              Reliability
+            </div>
           </div>
-          <div class="flex flex-col justify-center text-lg lg:text-2xl">
-            Reliability
+          <div class="flex justify-center py-3">
+            <div class="flex justify-center p-2 align-middle sm:p-4">
+              <HiOutlineClipboardCheck className="h-7 w-7" />
+            </div>
+            <div class="flex flex-col justify-center text-lg lg:text-2xl">
+              Discipline
+            </div>
           </div>
-        </div>
-        <div class="flex justify-center py-3">
-          <div class="flex justify-center p-2 align-middle sm:p-4">
-            <HiOutlineClipboardCheck className="h-7 w-7" />
+          <div class="flex justify-center py-3">
+            <div class="flex justify-center p-2 align-middle  sm:p-4">
+              <HiOutlineBriefcase className="h-7 w-7" />
+            </div>
+            <div class="flex flex-col justify-center text-lg lg:text-2xl">
+              Professionalism
+            </div>
           </div>
-          <div class="flex flex-col justify-center text-lg lg:text-2xl">
-            Discipline
+          <div class="flex justify-center py-3">
+            <div class="flex justify-center p-2 align-middle sm:p-4">
+              <TbMoodSmile className="h-7 w-7" />
+            </div>
+            <div class="flex flex-col justify-center text-lg lg:text-2xl">
+              Clients Satisfaction
+            </div>
           </div>
-        </div>
-        <div class="flex justify-center py-3">
-          <div class="flex justify-center p-2 align-middle  sm:p-4">
-            <HiOutlineBriefcase className="h-7 w-7" />
-          </div>
-          <div class="flex flex-col justify-center text-lg lg:text-2xl">
-            Professionalism
-          </div>
-        </div>
-        <div class="flex justify-center py-3">
-          <div class="flex justify-center p-2 align-middle sm:p-4">
-            <TbMoodSmile className="h-7 w-7" />
-          </div>
-          <div class="flex flex-col justify-center text-lg lg:text-2xl">
-            Clients Satisfaction
-          </div>
-        </div>
-        <div class="flex justify-center py-3">
-          <div class="flex justify-center p-2 align-middle sm:p-4">
-            <HiOutlineClock className="h-7 w-7" />
-          </div>
-          <div class="flex flex-col justify-center text-lg lg:text-2xl">
-            Promptness
+          <div class="flex justify-center py-3">
+            <div class="flex justify-center p-2 align-middle sm:p-4">
+              <HiOutlineClock className="h-7 w-7" />
+            </div>
+            <div class="flex flex-col justify-center text-lg lg:text-2xl">
+              Promptness
+            </div>
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      {/* <Testimonial /> */}
-      <br />
-      <br />
-      <br />
-      <br />
+
       <Footer />
     </div>
   );

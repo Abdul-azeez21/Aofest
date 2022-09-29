@@ -15,7 +15,7 @@ const Agents = () => {
         transition={{ duration: 1, delay: 0 }}
         viewport={{ once: true }}
       >
-        <div class="h-[32rem] bg-gray-100 dark:bg-gray-800">
+        <div class="h-[32rem] bg-gray-100">
           <div class="container px-6 py-10 mx-auto">
             <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
               The Executive Team
@@ -33,7 +33,7 @@ const Agents = () => {
           </div>
         </div>
 
-        <div class="container px-6 py-10 mx-auto -mt-72 sm:-mt-80 md:-mt-96">
+        <div class="container px-6 py-3 mx-auto -mt-72 sm:-mt-80 md:-mt-96">
           <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
             <div class="flex flex-col items-center p-4 border sm:p-6 rounded-xl dark:border-gray-700">
               <img
@@ -52,7 +52,7 @@ const Agents = () => {
 
               <div class="flex mt-3 -mx-2">
                 <a
-                  href="#"
+                  href="/"
                   class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
                   aria-label="Facebook"
                 >
@@ -78,7 +78,7 @@ const Agents = () => {
 
               <div class="flex mt-3 -mx-2">
                 <a
-                  href="#"
+                  href="/"
                   class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
                   aria-label="Facebook"
                 >
@@ -104,7 +104,7 @@ const Agents = () => {
 
               <div class="flex mt-3 -mx-2">
                 <a
-                  href="#"
+                  href="/"
                   class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
                   aria-label="Facebook"
                 >

@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 const Navbar = () => {
   return (
     <div>
       <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
-          <a href="#" class="flex">
+          <a href="/" class="flex">
             <span class="self-center text-lg font-bold lg:text-3xl whitespace-nowrap dark:text-white">
               <a href="/" class="">
                 <img
