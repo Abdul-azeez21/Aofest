@@ -17,7 +17,7 @@ const Homepage = () => {
   return (
     <div>
       <Navbar />
-      <motion.div className="w-full bg-gradient-to-b from-blue-800 via-purple-400 to-white content-center justify-center items-center lg:flex h-[32rem] p-8">
+      <motion.div className="w-full bg-gradient-to-b from-blue-800 via-blue-400 to-white content-center justify-center items-center lg:flex h-[32rem] p-8">
         <motion.div className="p-5 flex justify-center items-center">
           <motion.div
             className="border border-white p-2"

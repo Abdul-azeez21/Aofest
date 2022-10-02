@@ -9,14 +9,14 @@ const MobileNav = ({ showMenu, active }) => {
     <div
       className={
         active
-          ? "md:hidden z-20 fixed top-0 right-0 h-screen w-3/5 bg-blue-500/50 backdrop-blur-xl"
+          ? "md:hidden z-20 fixed top-0 right-0 h-screen w-3/5 bg-white/50 backdrop-blur-xl"
           : "hidden"
       }
     >
       <div className="flex justify-end mt-8 mr-4">
         <VscChromeClose onClick={showMenu} className="cursor-pointer h-5 w-5" />
       </div>
-      <ul className="h-5/6 flex-col flex items-start gap-5 text-2xl justify-center text-white ml-20">
+      <ul className="h-5/6 flex-col flex items-start gap-5 text-2xl justify-center text-black ml-20">
         <motion.li
           className=""
           initial={{ opacity: 0, translateX: 5 }}

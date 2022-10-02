@@ -35,7 +35,7 @@ const Services = () => {
               viewport={{ once: true }}
             >
               <span className="inline-block text-blue-500 dark:text-blue-400">
-                <FiHome className="h-6 w-6 animate-bounce" strokeWidth="2" />
+                <FiHome className="h-6 w-6" strokeWidth="2" />
               </span>
               <h1 className="text-lg font-semibold text-gray-700 capitalize dark:text-white">
                 Real Estate & Property Management
@@ -49,10 +49,7 @@ const Services = () => {
               viewport={{ once: true }}
             >
               <span className="inline-block text-blue-500 dark:text-blue-400">
-                <FaRegHandshake
-                  className="h-6 w-6 animate-bounce"
-                  strokeWidth="2"
-                />
+                <FaRegHandshake className="h-6 w-6" strokeWidth="2" />
               </span>
               <h1 className="text-lg font-semibold text-gray-700 capitalize dark:text-white">
                 Sales & Purchase of Landed Property
@@ -66,10 +63,7 @@ const Services = () => {
               viewport={{ once: true }}
             >
               <span class="inline-block text-blue-500 dark:text-blue-400">
-                <FiBriefcase
-                  className="h-6 w-6 animate-bounce"
-                  strokeWidth="2"
-                />
+                <FiBriefcase className="h-6 w-6" strokeWidth="2" />
               </span>
               <h1 className="text-lg font-semibold text-gray-700 capitalize dark:text-white">
                 Development Services
@@ -83,7 +77,7 @@ const Services = () => {
               viewport={{ once: true }}
             >
               <span className="inline-block text-blue-500 dark:text-blue-400">
-                <FiTruck className="h-6 w-6 animate-bounce" strokeWidth="2" />
+                <FiTruck className="h-6 w-6" strokeWidth="2" />
               </span>
               <h1 className="text-lg font-semibold text-gray-700 capitalize dark:text-white">
                 Plant Hiring
@@ -97,7 +91,7 @@ const Services = () => {
               viewport={{ once: true }}
             >
               <motion.span className="inline-block text-blue-500 dark:text-blue-400">
-                <FiUser className="h-6 w-6 animate-bounce" strokeWidth="2" />
+                <FiUser className="h-6 w-6" strokeWidth="2" />
               </motion.span>
               <h1 className="text-lg font-semibold text-gray-700 capitalize dark:text-white">
                 General Contractor
