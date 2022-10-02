@@ -9,7 +9,7 @@ const MobileNav = ({ showMenu, active }) => {
     <div
       className={
         active
-          ? "md:hidden z-20 fixed top-0 right-0 h-screen w-1/2 bg-blue-500/50 backdrop-blur-xl"
+          ? "md:hidden z-20 fixed top-0 right-0 h-screen w-3/5 bg-blue-500/50 backdrop-blur-xl"
           : "hidden"
       }
     >
