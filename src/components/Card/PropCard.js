@@ -25,7 +25,7 @@ const PropCard = () => {
                   <div>
                     <div class="text-sm text-gray-700">
                       <Link to={`/each?id=${properties.id}`}>
-                        <span className="text-xs font-medium text-gray-800 bg-red-500/50 px-3 py-1 rounded-xl">
+                        <span className="text-xs font-medium text-gray-800 bg-blue-700/50 px-3 py-1 rounded-xl">
                           {properties.property}
                         </span>
                       </Link>
