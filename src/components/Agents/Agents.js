@@ -68,7 +68,7 @@ const Agents = () => {
                 alt=""
               />
 
-              <h1 class="mt-4 lg:text-2xl text-lg font-semibold text-gray-700 capitalize dark:text-white">
+              <h1 class="mt-4 lg:text-2xl text-lg text-center font-semibold text-gray-700 capitalize dark:text-white">
                 Akinsolu Kolawole Akinwunmi
               </h1>
 

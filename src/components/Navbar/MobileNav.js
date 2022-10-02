@@ -16,7 +16,7 @@ const MobileNav = ({ showMenu, active }) => {
       <div className="flex justify-end mt-8 mr-4">
         <VscChromeClose onClick={showMenu} className="cursor-pointer h-5 w-5" />
       </div>
-      <ul className="h-5/6 flex-col flex items-center gap-5 text-lg justify-center text-white">
+      <ul className="h-5/6 flex-col flex items-start gap-5 text-2xl justify-center text-white ml-24">
         <motion.li
           className=""
           initial={{ opacity: 0, translateX: 5 }}

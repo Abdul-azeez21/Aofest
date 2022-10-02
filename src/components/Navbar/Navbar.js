@@ -28,7 +28,7 @@ const Navbar = () => {
           <div>
             <CgMenuRight
               onClick={showMenu}
-              className="cursor-pointer md:hidden"
+              className="cursor-pointer md:hidden h-5 w-5"
             />
           </div>
           <ul className="hidden md:flex gap-8 text-base font-normal text-black">
