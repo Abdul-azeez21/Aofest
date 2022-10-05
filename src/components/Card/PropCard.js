@@ -24,7 +24,7 @@ const PropCard = () => {
                 <div class="mt-3 flex justify-between">
                   <div>
                     <div class="text-sm text-gray-700">
-                      <Link to={`/each?id=${properties.id}`}>
+                      <Link to="/contact">
                         <span className="text-xs font-medium text-gray-800 bg-blue-700/50 px-3 py-1 rounded-xl">
                           {properties.property}
                         </span>

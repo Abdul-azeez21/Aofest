@@ -16,7 +16,7 @@ const HomeCard = () => {
               viewport={{ once: true }}
             >
               <motion.img
-                src="https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZXN0YXRlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                src="/prop1.jpg"
                 initial={{ opacity: 0, translateX: -70 }}
                 whileInView={{ opacity: 1, translateX: 0 }}
                 transition={{ duration: 1.5, delay: 0 }}
@@ -34,7 +34,7 @@ const HomeCard = () => {
               viewport={{ once: true }}
             >
               <motion.img
-                src="https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZXN0YXRlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                src="/prop4.jpg"
                 initial={{ opacity: 0, translateX: 70 }}
                 whileInView={{ opacity: 1, translateX: 0 }}
                 transition={{ duration: 1.5, delay: 0 }}
@@ -52,7 +52,7 @@ const HomeCard = () => {
               viewport={{ once: true }}
             >
               <motion.img
-                src="https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZXN0YXRlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJlYWwlMjBlc3RhdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
                 initial={{ opacity: 0, translateX: -70 }}
                 whileInView={{ opacity: 1, translateX: 0 }}
                 transition={{ duration: 1.5, delay: 0 }}

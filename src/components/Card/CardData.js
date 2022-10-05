@@ -1,8 +1,7 @@
 const cardfInfo = [
   {
     id: 1,
-    propertyImage:
-      "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2V8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    propertyImage: "/prop2.jpg",
     property: "Property #1",
     detail1: "2 units",
     detail2: "5-bedroom detached duplex",
@@ -16,8 +15,7 @@ const cardfInfo = [
   },
   {
     id: 2,
-    propertyImage:
-      "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2V8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    propertyImage: "/prop1.jpg",
     property: "Property #2",
     detail1: "5 units",
     detail2: "4-bedroom detached duplex",
@@ -31,8 +29,7 @@ const cardfInfo = [
   },
   {
     id: 3,
-    propertyImage:
-      "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2V8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    propertyImage: "/prop3.jpg",
     property: "Property #3",
     detail1: "A wing",
     detail2: "4-bedroom duplex",
