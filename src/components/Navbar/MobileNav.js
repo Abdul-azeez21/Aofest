@@ -5,28 +5,17 @@ import { motion } from "framer-motion";
 import { VscChromeClose } from "react-icons/vsc";
 
 const MobileNav = ({ showMenu, active }) => {
-  const variants = {
-    closed: { opacity: 0, x: "100%" },
-    open: {
-      opacity: 1,
-      x: 0,
-    },
-  };
   return (
-    <motion.div
-      animate={active ? "open" : "closed"}
-      transition={{ duration: 0.5 }}
-      variants={variants}
-      className="md:hidden z-20 fixed top-0 right-0 h-screen w-3/5 bg-white/50 backdrop-blur-xl"
+    <div
+      className={
+        active
+          ? "md:hidden z-20 fixed top-0 right-0 h-screen w-3/5 bg-white/50 backdrop-blur-xl"
+          : "hidden"
+      }
     >
-      <motion.div
-        className="flex justify-end mt-8 mr-4"
-        transition={{ duration: 0.5 }}
-        variants={variants}
-        animate={showMenu ? "open" : "closed"}
-      >
+      <div className="flex justify-end mt-8 mr-4">
         <VscChromeClose onClick={showMenu} className="cursor-pointer h-5 w-5" />
-      </motion.div>
+      </div>
       <ul className="h-5/6 flex-col flex items-start gap-5 text-2xl justify-center text-black ml-20">
         <motion.li
           className=""
@@ -73,7 +62,7 @@ const MobileNav = ({ showMenu, active }) => {
           </Link>
         </motion.li>
       </ul>
-    </motion.div>
+    </div>
   );
 };
 
