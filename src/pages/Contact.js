@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../layout/Footer/Footer";
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 //icons
@@ -28,12 +28,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .send(
-        "service_xi57x05",
-        "template_j57domt",
-        values,
-        "user_PDU99tS6mlXYloYhmsjk0"
-      )
+      .send("service_i159fhe", "template_jlg6ktm", values, "9t7zvyXynqvsSvFt4")
       .then(
         (response) => {
           // console.log("SUCCESS", response);
@@ -106,7 +101,7 @@ const Contact = () => {
                 name="fullName"
                 value={values.fullName}
                 onChange={handleChange}
-                placeholder="Fullname"
+                placeholder="Full name"
                 className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-blue-400 dark:bg-coolGray-800"
               />
             </label>
