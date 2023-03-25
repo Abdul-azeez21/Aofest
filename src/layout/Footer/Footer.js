@@ -81,7 +81,7 @@ const Footer = () => {
                     08029559491
                   </span>
                   <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                    example@email.com
+                    aofestproperties@gmail.com
                   </span>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const Footer = () => {
 
           <div>
             <p class="text-center text-gray-800 dark:text-white">
-              © Aofest Property Enterprise 2022 - All rights reserved
+              © Aofest Property Enterprise 2023 - All rights reserved
             </p>
           </div>
         </div>

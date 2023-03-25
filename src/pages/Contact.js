@@ -4,10 +4,19 @@ import Footer from "../layout/Footer/Footer";
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import * as Yup from "yup";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
 import "react-toastify/dist/ReactToastify.css";
 
 //icons
 import { MdLocationOn, MdLocalPhone, MdMail } from "react-icons/md";
+
+const validate = Yup.object({
+  fullName: Yup.string().required("Required"),
+  email: Yup.string().email("Invalid email").required("Required"),
+  message: Yup.string().required("Required"),
+});
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -18,15 +27,20 @@ const Contact = () => {
     email: "",
     message: "",
   });
-
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(validate),
+  });
   const handleChange = (e) => {
     setValues((values) => ({
       ...values,
       [e.target.name]: e.target.value,
     }));
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmitt = (e) => {
     emailjs
       .send("service_i159fhe", "template_jlg6ktm", values, "9t7zvyXynqvsSvFt4")
       .then(
@@ -56,9 +70,9 @@ const Contact = () => {
             "url(https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29udGFjdCUyMHVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)",
         }}
       >
-        <div class="flex items-center justify-center w-full h-full bg-blue-900/50">
-          <div class="text-center">
-            <h1 class="text-3xl font-semibold text-white lg:text-5xl">
+        <div className="flex items-center justify-center w-full h-full bg-blue-900/50">
+          <div className="text-center">
+            <h1 className="text-3xl font-semibold text-white lg:text-5xl">
               Contact Us{" "}
             </h1>
           </div>
@@ -85,13 +99,12 @@ const Contact = () => {
               </p>
               <p className="flex items-center">
                 <MdMail className="w-6 h-6 mr-2 sm:mr-6 text-blue-700" />
-                <span>contact@business.com</span>
+                <span>aofestproperties@gmail.com</span>
               </p>
             </div>
           </div>
           <form
-            onSubmit={handleSubmit}
-            novalidate=""
+            onSubmit={handleSubmit(handleSubmitt)}
             className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
           >
             <label className="block">
@@ -99,36 +112,49 @@ const Contact = () => {
               <input
                 type="text"
                 name="fullName"
+                {...register("fullName")}
                 value={values.fullName}
                 onChange={handleChange}
                 placeholder="Full name"
                 className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-blue-400 dark:bg-coolGray-800"
               />
             </label>
+            <span className="text-xs text-red-600 text-start my-2">
+              {errors.fullName?.message}
+            </span>
             <label className="block">
               <span className="mb-1">Email address</span>
               <input
                 type="email"
                 name="email"
+                {...register("email")}
                 onChange={handleChange}
                 value={values.email}
                 placeholder="mail@example.com"
                 className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-blue-400 dark:bg-coolGray-800"
               />
             </label>
+            <span className="text-xs text-red-600 text-start my-2">
+              {errors.email?.message}
+            </span>
             <label className="block">
               <span className="mb-1">Message</span>
               <textarea
                 rows="3"
                 name="message"
+                {...register("message")}
                 onChange={handleChange}
                 value={values.message}
                 className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-blue-400 dark:bg-coolGray-800"
               ></textarea>
             </label>
+            <span className="text-xs text-red-600 text-start my-2">
+              {errors.message?.message}
+            </span>
             {!loading && (
               <button
                 type="submit"
+                onSubmit={handleSubmit(handleSubmitt)}
                 className="self-center text-white font-bold px-8 py-1 text-lg rounded focus:ring focus:ring-opacity-75 bg-blue-600/75 hover:bg-blue-600"
               >
                 Submit
