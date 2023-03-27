@@ -47,7 +47,7 @@ const Agents = () => {
               </h1>
 
               <p class="mt-2 text-gray-500 capitalize dark:text-gray-300">
-                Founder
+                Chairman, (C.E.O)
               </p>
 
               <div class="flex mt-3 -mx-2">
@@ -73,7 +73,7 @@ const Agents = () => {
               </h1>
 
               <p class="mt-2 text-gray-500 capitalize dark:text-gray-300">
-                Co-Founder/Managing Director
+                Managing Director, (C.O.O)
               </p>
 
               <div class="flex mt-3 -mx-2">
