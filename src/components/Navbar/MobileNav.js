@@ -21,7 +21,7 @@ const MobileNav = ({ showMenu, active }) => {
           className=""
           initial={{ opacity: 0, translateX: 5 }}
           whileInView={{ opacity: 1, translateX: 0 }}
-          transition={{ duration: 0.5, delay: 0 }}
+          transition={{ duration: 0.5, delay: 0, type: "spring" }}
           viewport={{ once: false }}
         >
           <Link to="/" className="hover:no-underline hover:text-white">
@@ -32,7 +32,7 @@ const MobileNav = ({ showMenu, active }) => {
           className=""
           initial={{ opacity: 0, translateX: 5 }}
           whileInView={{ opacity: 1, translateX: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.2, type: "spring" }}
           viewport={{ once: false }}
         >
           <Link to="/about" className="hover:no-underline hover:text-white">
@@ -43,7 +43,7 @@ const MobileNav = ({ showMenu, active }) => {
           className=""
           initial={{ opacity: 0, translateX: 5 }}
           whileInView={{ opacity: 1, translateX: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.4, type: "spring" }}
           viewport={{ once: false }}
         >
           <Link to="/props" className="hover:no-underline hover:text-white">
@@ -54,7 +54,7 @@ const MobileNav = ({ showMenu, active }) => {
           className=""
           initial={{ opacity: 0, translateX: 5 }}
           whileInView={{ opacity: 1, translateX: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
+          transition={{ duration: 0.5, delay: 0.8, type: "spring" }}
           viewport={{ once: false }}
         >
           <Link to="/contact" className="hover:no-underline hover:text-white">

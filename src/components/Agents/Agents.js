@@ -3,16 +3,16 @@ import React from "react";
 //motion
 import { motion } from "framer-motion";
 //icons
-import { FiFacebook } from "react-icons/fi";
+// import { FiFacebook } from "react-icons/fi";
 
 const Agents = () => {
   return (
-    <div>
+    <div className="max-w-[1280px] mx-auto px-2 mb-5">
       <motion.section
-        class="bg-white dark:bg-gray-900"
+        class="bg-white"
         initial={{ opacity: 0, translateY: 70 }}
         whileInView={{ opacity: 1, translateY: 0 }}
-        transition={{ duration: 1, delay: 0 }}
+        transition={{ duration: 0.8, delay: 0, type: "spring" }}
         viewport={{ once: true }}
       >
         <div class="h-[32rem] bg-gray-100">
@@ -35,7 +35,7 @@ const Agents = () => {
 
         <div class="container px-6 py-3 mx-auto -mt-72 sm:-mt-80 md:-mt-96">
           <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
-            <div class="flex flex-col items-center p-4 border sm:p-6 rounded-xl dark:border-gray-700">
+            <div class="flex flex-col items-center p-4 sm:p-6 rounded-xl shadow-sm bg-white">
               <img
                 class="object-cover w-full rounded-xl aspect-square"
                 src={require("../images/TITI WORK D3.jpg")}
@@ -47,10 +47,10 @@ const Agents = () => {
               </h1>
 
               <p class="mt-2 text-gray-500 capitalize dark:text-gray-300">
-                Chairman, (C.E.O)
+                Chairman (C.E.O)
               </p>
 
-              <div class="flex mt-3 -mx-2">
+              {/* <div class="flex mt-3 -mx-2">
                 <a
                   href="/"
                   class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
@@ -58,10 +58,10 @@ const Agents = () => {
                 >
                   <FiFacebook className="w-5 h-5" />
                 </a>
-              </div>
+              </div> */}
             </div>
 
-            <div class="flex flex-col items-center p-4 border sm:p-6 rounded-xl dark:border-gray-700">
+            <div class="flex flex-col items-center p-4 sm:p-6 rounded-xl shadow-sm bg-white">
               <img
                 class="object-cover w-full rounded-xl aspect-square"
                 src={require("../images/TITI WORK D2.jpg")}
@@ -73,10 +73,10 @@ const Agents = () => {
               </h1>
 
               <p class="mt-2 text-gray-500 capitalize dark:text-gray-300">
-                Managing Director, (C.O.O)
+                Managing Director (C.O.O)
               </p>
 
-              <div class="flex mt-3 -mx-2">
+              {/* <div class="flex mt-3 -mx-2">
                 <a
                   href="/"
                   class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
@@ -84,10 +84,10 @@ const Agents = () => {
                 >
                   <FiFacebook className="w-5 h-5" />
                 </a>
-              </div>
+              </div> */}
             </div>
 
-            <div class="flex flex-col items-center p-4 border sm:p-6 rounded-xl dark:border-gray-700">
+            <div class="flex flex-col items-center p-4 sm:p-6 rounded-xl shadow-sm bg-white">
               <img
                 class="object-cover w-full rounded-xl aspect-square"
                 src={require("../images/TITI WORK D1.jpg")}
@@ -101,7 +101,7 @@ const Agents = () => {
               <p class="mt-2 text-gray-500 capitalize dark:text-gray-300">
                 Manager
               </p>
-
+              {/* 
               <div class="flex mt-3 -mx-2">
                 <a
                   href="/"
@@ -110,7 +110,7 @@ const Agents = () => {
                 >
                   <FiFacebook className="w-5 h-5" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

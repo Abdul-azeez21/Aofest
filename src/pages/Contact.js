@@ -63,7 +63,7 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <div
+      {/* <div
         className="w-full bg-center bg-cover h-[24rem]"
         style={{
           backgroundImage:
@@ -77,9 +77,9 @@ const Contact = () => {
             </h1>
           </div>
         </div>
-      </div>
-      <section className="my-10">
-        <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
+      </div> */}
+      <section className="my-10 md:mt-32 mt-20">
+        <div className="grid max-w-[1280px] mx-auto grid-cols-1 px-6 lg:px-8 md:grid-cols-2 md:divide-x">
           <div className="py-6 md:py-0 md:px-6">
             <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-900">
               Get in touch

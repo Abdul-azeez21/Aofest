@@ -12,6 +12,8 @@ const cardfInfo = [
     location: "Morgan estate",
     price: "100m",
     price2: "",
+    bath: "5 Bathroom",
+    bed: "5 Bedroom",
   },
   {
     id: 2,
@@ -26,6 +28,8 @@ const cardfInfo = [
     location: "Isheri, Magodo, Lagos",
     price: "100m",
     price2: "450m",
+    bath: "4 Bathroom",
+    bed: "4 Bedroom",
   },
   {
     id: 3,
@@ -37,9 +41,11 @@ const cardfInfo = [
     detail4: "-",
     detail5: "Awaiting governor's consent",
     detail6: "",
-    location: "John Olarele Avoseh zone, Magodo phase 1, Isheri, Lagos",
+    location: "John Olarele Avoseh zone, Magodo phase 1, Lagos",
     price: "75m",
     price2: "",
+    bath: "4 Bathroom",
+    bed: "4 Bedroom",
   },
   {
     id: 4,
@@ -52,9 +58,11 @@ const cardfInfo = [
     detail4: "-",
     detail5: "Certificate Of Ownership",
     detail6: "",
-    location: "Magodo, GRA Phase 1, Isheri, Lagos",
+    location: "Magodo, GRA Phase 1, Lagos",
     price: "35m",
     price2: "",
+    bath: "3 Bathroom",
+    bed: "3 Bedroom",
   },
   {
     id: 5,
@@ -70,6 +78,8 @@ const cardfInfo = [
     location: "Magodo phase 2",
     price: "220m",
     price2: "",
+    bath: "5 Bathroom",
+    bed: "5 Bedroom",
   },
   {
     id: 6,
@@ -85,6 +95,8 @@ const cardfInfo = [
     location: "Oladoyinbo St, Aguda, Ogba",
     price: "27m",
     price2: "",
+    bath: "2 Bathroom",
+    bed: "2 Bedroom",
   },
   {
     id: 7,
@@ -100,6 +112,8 @@ const cardfInfo = [
     location: "Magodo Phase 1, Isheri, Lagos",
     price: "55m",
     price2: "",
+    bath: "4 Bathroom",
+    bed: "4 Bedroom",
   },
   {
     id: 8,
@@ -115,6 +129,8 @@ const cardfInfo = [
     location: "",
     price: "",
     price2: "",
+    bath: "",
+    bed: "",
   },
   {
     id: 9,
@@ -130,6 +146,8 @@ const cardfInfo = [
     location: "",
     price: "",
     price2: "",
+    bath: "",
+    bed: "",
   },
   {
     id: 10,
@@ -145,6 +163,8 @@ const cardfInfo = [
     location: "",
     price: "",
     price2: "",
+    bath: "",
+    bed: "",
   },
   {
     id: 11,
@@ -160,6 +180,8 @@ const cardfInfo = [
     location: "",
     price: "",
     price2: "",
+    bath: "",
+    bed: "",
   },
   {
     id: 12,
@@ -175,6 +197,8 @@ const cardfInfo = [
     location: "",
     price: "",
     price2: "",
+    bath: "",
+    bed: "",
   },
   {
     id: 13,
@@ -190,6 +214,8 @@ const cardfInfo = [
     location: "",
     price: "",
     price2: "",
+    bath: "",
+    bed: "",
   },
   {
     id: 14,
@@ -205,6 +231,8 @@ const cardfInfo = [
     location: "",
     price: "",
     price2: "",
+    bath: "",
+    bed: "",
   },
   {
     id: 15,
@@ -220,6 +248,8 @@ const cardfInfo = [
     location: "",
     price: "",
     price2: "",
+    bath: "",
+    bed: "",
   },
   {
     id: 16,
@@ -235,6 +265,8 @@ const cardfInfo = [
     location: "",
     price: "",
     price2: "",
+    bath: "",
+    bed: "",
   },
   {
     id: 17,
@@ -250,6 +282,8 @@ const cardfInfo = [
     location: "",
     price: "",
     price2: "",
+    bath: "",
+    bed: "",
   },
   {
     id: 18,
@@ -265,6 +299,8 @@ const cardfInfo = [
     location: "",
     price: "",
     price2: "",
+    bath: "",
+    bed: "",
   },
 ];
 export default cardfInfo;
